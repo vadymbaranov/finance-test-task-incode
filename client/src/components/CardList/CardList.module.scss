@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.cardList {
+    &_modal {
+        padding: 1rem;
+        border: 1px solid #edf0f2;
+        background: #fff;
+        border-radius: 10px;
+
+        &::backdrop {
+            background: rgba(24, 30, 31, 0.8);
+            z-index: 11;
+        }
+    }
+}
